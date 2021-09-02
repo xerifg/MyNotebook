@@ -8,8 +8,7 @@
 <summary>编程:</summary>
 
 - [如何正确使用Git](https://blog.csdn.net/qq_43075378/article/details/120067900)
-- [如何正确使用Markdown]([二十分钟精通排版神器Markdown_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Yb411c7Hi))
-  
+- [如何正确使用Markdown](https://www.bilibili.com/video/BV1Yb411c7Hi)
 
 </details>
 
