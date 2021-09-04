@@ -9,11 +9,13 @@
 
 - [如何正确使用Git](https://blog.csdn.net/qq_43075378/article/details/120067900)
 - [如何正确使用Markdown](https://www.bilibili.com/video/BV1Yb411c7Hi)
-- [python使用者一定要会用的笔记本](https://www.bilibili.com/video/BV1Q4411H7fJ?spm_id_from=333.999.0.0)
+- [python使用者一定要会用的笔记本-Jupyter](https://www.bilibili.com/video/BV1Q4411H7fJ?spm_id_from=333.999.0.0)
 
 </details>
 
 # FAQ
+
+* [如何利用GitHub搭建自己的博客网站？](https://www.toutiao.com/a6992456857474449934/?log_from=275cf7f05bdfc_1630748431310)
 
 # 思考
 
