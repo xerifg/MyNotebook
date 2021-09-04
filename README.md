@@ -9,6 +9,7 @@
 
 - [如何正确使用Git](https://blog.csdn.net/qq_43075378/article/details/120067900)
 - [如何正确使用Markdown](https://www.bilibili.com/video/BV1Yb411c7Hi)
+- [python使用者一定要会用的笔记本](https://www.bilibili.com/video/BV1Q4411H7fJ?spm_id_from=333.999.0.0)
 
 </details>
 
