@@ -4,6 +4,10 @@
 
 # 神经网络
 
+神经网络可以分为两大类，一类是类似于卷积神经网络的多层神经网络，其中，BP网络是始祖；
+
+另一类是类似于深度信念网络的相互连接型网络，其中，Hopfied网络是始祖
+
 * 损失(代价)函数
   1. 最小二乘误差函数（二次代价函数）
   2. [交叉熵代价函数](https://blog.csdn.net/u014313009/article/details/51043064)
@@ -21,6 +25,40 @@
   1. AdaDrad
   2. AdaDelta
   3. 动量方法
+
+## 1. 卷积神经网路
+
+* [BP神经网络上](https://blog.csdn.net/weixin_42398658/article/details/83859131)、[BP神经网络中](https://blog.csdn.net/weixin_42398658/article/details/83929474)、[BP神经网络下](https://blog.csdn.net/weixin_42398658/article/details/83958133)
+* [卷积网络的动态可视化](https://www.bilibili.com/video/BV1AJ411Q72b?p=3&spm_id_from=pageDriver)
+* 卷积神经网络保持平移、缩放、变形不变性的原因：
+  1. 局部感受野
+  2. 权值共享
+  3. 下采样（池化）：减少参数，防止过拟合
+
+####   * 参数的设定
+
+* 与神经网络相关的（排名越靠前，对结果影响越大）
+  1. 网络的层结构
+  2. 卷积层的卷积核的大小，个数
+  3. 激活函数的种类
+  4. 有无预处理
+  5. Dropout的概率
+  6. 池化的方法
+  7. 全连接层的个数
+  8. 有无归一化
+
+* 与训练相关的参数
+  1. Mimi-Batch的大小
+  2. 学习率
+  3. 迭代次数
+  4. 有无预训练
+
+## 2. 深度信念网络(DBN)
+
+* Hopfield神经网络([学习资料(上)](https://blog.csdn.net/weixin_42398658/article/details/83991773)、[学习资料(下)](https://blog.csdn.net/weixin_42398658/article/details/84027012))
+* 波尔兹曼机
+* 受限波尔兹曼机
+* 深度信念网络
 
 # 强化学习
 
