@@ -2,6 +2,10 @@
 
 我会在这里将自己学习过程中的知识以笔记的形式在这里记录下来，会包含算法、数据结构、编程语言、常用工具的使用，以及经常会遇到的各种问题，还会包含平时自己的一些思考，或许还会根据需要再添加其他类的笔记，大家有好的想法的欢迎进行补充，这个笔记的初衷就是--共同进步。
 
+# 经典算法
+
+* [卡尔曼滤波](https://zhuanlan.zhihu.com/p/45238681)
+
 # 神经网络
 
 神经网络可以分为两大类，一类是类似于卷积神经网络的多层神经网络，其中，BP网络是始祖；
@@ -64,6 +68,10 @@
 
 * [基本概念(human-level control through deep reinforcement learning)](https://github.com/xerifg/MyNotebook/blob/main/materials/dqn-atari.pdf)
 
+# 数据集
+
+* 步态数据集
+
 # 工具
 
 
@@ -74,6 +82,7 @@
 # FAQ
 
 * [如何利用GitHub搭建自己的博客网站？](https://www.toutiao.com/a6992456857474449934/?log_from=275cf7f05bdfc_1630748431310)
+* [Python中常用的矩阵运算有哪些？](https://cs231n.github.io/python-numpy-tutorial/#numpy)
 
 # 思考
 
