@@ -5,6 +5,7 @@
 # 经典算法
 
 * [卡尔曼滤波](https://zhuanlan.zhihu.com/p/45238681)
+* [马尔可夫链](https://www.bilibili.com/video/BV19b4y127oZ?from=search&seid=11829849833797645360&spm_id_from=333.337.0.0)
 
 # 神经网络
 
@@ -61,7 +62,7 @@
 
 * Hopfield神经网络([学习资料(上)](https://blog.csdn.net/weixin_42398658/article/details/83991773)、[学习资料(下)](https://blog.csdn.net/weixin_42398658/article/details/84027012))
 * 波尔兹曼机
-* 受限波尔兹曼机
+* [受限波尔兹曼机](https://zhuanlan.zhihu.com/p/22794772)
 * 深度信念网络
 
 # 强化学习
@@ -78,6 +79,8 @@
 - [如何正确使用Git](https://blog.csdn.net/qq_43075378/article/details/120067900)
 - [如何正确使用Markdown](https://www.bilibili.com/video/BV1Yb411c7Hi)
 - [python使用者一定要会用的笔记本-Jupyter](https://www.bilibili.com/video/BV1Q4411H7fJ?spm_id_from=333.999.0.0)
+- [如何正确使用GitHub](https://www.ixigua.com/6892223361208812043?wid_try=1)
+- [如何正确使用“虚拟机”-docker](https://www.bilibili.com/video/BV1og4y1q7M4?p=1)
 
 # FAQ
 
