@@ -5,7 +5,12 @@
 # 经典算法
 
 * [卡尔曼滤波](https://zhuanlan.zhihu.com/p/45238681)
+
 * [马尔可夫链](https://www.bilibili.com/video/BV19b4y127oZ?from=search&seid=11829849833797645360&spm_id_from=333.337.0.0)
+
+* [PCA降维](https://zhuanlan.zhihu.com/p/32412043)
+
+  主要是对原始数据的协方差矩阵进行特征分解，提取前k个特征向量，则由这些特征向量组成的矩阵，就是将原数据降维到k维的转换矩阵
 
 # 神经网络
 
@@ -72,6 +77,12 @@
 # 数据集
 
 * [步态数据集](https://raw.githubusercontent.com/xerifg/MyNotebook/main/picture/%E6%AD%A5%E6%80%81%E6%95%B0%E6%8D%AE%E9%9B%86.bmp)
+
+# 信号处理
+
+* [自相关与互相关](https://zhuanlan.zhihu.com/p/77072803)
+
+  自相关的特点，原信号的自相关信号，虽幅值改变，但保留了原信号的频率特征。常用应用：从杂乱的信号中提取有周期性的隐藏信号
 
 # 工具
 
