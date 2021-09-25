@@ -97,6 +97,7 @@
 
 * [如何利用GitHub搭建自己的博客网站？](https://www.toutiao.com/a6992456857474449934/?log_from=275cf7f05bdfc_1630748431310)
 * [Python中常用的矩阵运算有哪些？](https://cs231n.github.io/python-numpy-tutorial/#numpy)
+* [ubuntu终端如何实现科学上网](https://www.jianshu.com/p/3ea31fcca279)
 
 # 思考
 
