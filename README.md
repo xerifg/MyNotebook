@@ -2,6 +2,38 @@
 
 我会在这里将自己学习过程中的知识以笔记的形式在这里记录下来，会包含算法、数据结构、编程语言、常用工具的使用，以及经常会遇到的各种问题，还会包含平时自己的一些思考，或许还会根据需要再添加其他类的笔记，大家有好的想法的欢迎进行补充，这个笔记的初衷就是--共同进步。
 
+# 开始之前
+
+[学习如何学习](https://www.coursera.org/learn/learning-how-to-learn)
+
+学习新知识很重要。但是，复习知识更重要，否则，时间一长你之前学习知识就会忘记，相当于你之前花的时间浪费掉了，这里有一个用于复习的抽认卡软件推荐给大家（[Anki](https://apps.ankiweb.net/)），类似于一些英语学习的软件学习单词的方式，让你复习你之前学过的各种知识。
+
+# 数据结构
+
+* #### 算法复杂度/Big-O/渐进分析法
+
+  [渐进表示（视频）](https://www.youtube.com/watch?v=iOq5kSKqeR4)
+
+  [Big-O记号  (视频)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3)
+
+  ## i  一级知识
+
+  * #### 数组（Arrays）
+
+  * #### 链表（Linked Lists）
+
+  * #### 堆栈（Stack）
+
+  * #### 队列（Queue）
+
+  * #### 哈希表（Hash table）
+
+  ## ii 二级知识
+
+  * #### 二分查找
+  
+  * #### 树
+
 # 经典算法
 
 * [卡尔曼滤波](https://zhuanlan.zhihu.com/p/45238681)
