@@ -142,8 +142,8 @@
 
 [如何将论文中的深度学习方法用pytorch实现？](https://mp.weixin.qq.com/s/iQdRqxw7pjPMAa3suiJRVA)
 
-* [使用pytorch生成GAN网络](https://github.com/xerifg/MyNotebook/blob/main/GAN_pytorch.ipynb)
-* [使用pytorch搭建全连接神经网络识别MINIST数据集的手写数字](https://github.com/xerifg/MyNotebook/blob/main/pytorch%2BMINIST.ipynb)
+* [使用pytorch生成GAN网络](https://github.com/xerifg/Myipynb/blob/main/GAN_pytorch.ipynb)
+* [使用pytorch搭建全连接神经网络识别MINIST数据集的手写数字](https://github.com/xerifg/Myipynb/blob/main/pytorch%2BMINIST.ipynb)
 
 # 思考
 
