@@ -50,9 +50,14 @@
 
 另一类是类似于深度信念网络的相互连接型网络，其中，Hopfied网络是始祖
 
+* 特征工程
+  * 编码方式
+    * 独热编码（one hot encoding）
+    * [Embedding](https://blog.csdn.net/weixin_44493841/article/details/95341407)
 * 损失(代价)函数
   1. 最小二乘误差函数（二次代价函数）
   2. [交叉熵代价函数](https://blog.csdn.net/u014313009/article/details/51043064)
+  3. [Triplet loss](https://blog.csdn.net/u013082989/article/details/83537370)
 
 
 * 激活函数
@@ -124,12 +129,21 @@
 - [python使用者一定要会用的笔记本-Jupyter](https://www.bilibili.com/video/BV1Q4411H7fJ?spm_id_from=333.999.0.0)
 - [如何正确使用GitHub](https://www.ixigua.com/6892223361208812043?wid_try=1)
 - [如何正确使用“虚拟机”-docker](https://www.bilibili.com/video/BV1og4y1q7M4?p=1)
+- [敲代码不会给变量起名字？用这个网站啊！](https://unbug.github.io/codelf/#position%20list)
 
 # FAQ
 
 * [如何利用GitHub搭建自己的博客网站？](https://www.toutiao.com/a6992456857474449934/?log_from=275cf7f05bdfc_1630748431310)
 * [Python中常用的矩阵运算有哪些？](https://cs231n.github.io/python-numpy-tutorial/#numpy)
 * [ubuntu终端如何实现科学上网](https://www.jianshu.com/p/3ea31fcca279)
+* [代码是如何驱动硬件的？](https://www.cnblogs.com/zhugeanran/p/8605757.html)
+
+# 代码/项目
+
+[如何将论文中的深度学习方法用pytorch实现？](https://mp.weixin.qq.com/s/iQdRqxw7pjPMAa3suiJRVA)
+
+* [使用pytorch生成GAN网络](https://github.com/xerifg/MyNotebook/blob/main/GAN_pytorch.ipynb)
+* [使用pytorch搭建全连接神经网络识别MINIST数据集的手写数字](https://github.com/xerifg/MyNotebook/blob/main/pytorch%2BMINIST.ipynb)
 
 # 思考
 
