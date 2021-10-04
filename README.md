@@ -57,7 +57,9 @@
 * 损失(代价)函数
   1. 最小二乘误差函数（二次代价函数）
   2. [交叉熵代价函数](https://blog.csdn.net/u014313009/article/details/51043064)
-  3. [Triplet loss](https://blog.csdn.net/u013082989/article/details/83537370)
+  3. 对比损失(Contrastive loss)：多用于度量学习
+  4. [三元组损失(Triplet loss)](https://blog.csdn.net/u013082989/article/details/83537370):多用于度量学习(Metric learning)
+  5. 四元组损失(Quadruplet loss)：多用于度量学习
 
 
 * 激活函数
@@ -72,6 +74,14 @@
   1. AdaDrad
   2. AdaDelta
   3. 动量方法
+
+* 防止网络过拟合
+  1. Dropout
+  2. DropConnect
+* 预处理
+  1. 均值减法（将样本数据处理为均值为0）
+  2. 均一化（将样本数据约束为均值为0，方差为1的标准化数据）
+  3. 白化（消除样本数据间的相关性）
 
 ## 1. 卷积神经网路
 
@@ -107,6 +117,22 @@
 * [受限波尔兹曼机](https://zhuanlan.zhihu.com/p/22794772)
 * 深度信念网络
 
+## 3. 自编码器
+
+自编码器网络是一种无监督学习，其功能有：1. 数据的降维，2. 提取特征表达，3. 利用自编码器可以训练其他神经网络的初始参数
+
+* 降噪自编码器
+
+  通过编码与解码，消除掉图像中的噪声
+
+* 稀疏自编码器
+
+  引入正则化项，解决中间层参数冗余问题
+
+* 栈式自编码器
+
+  只有编码没有解码，由多个2层的编码器组合而成，逐层进行训练
+
 # 强化学习
 
 * [基本概念(human-level control through deep reinforcement learning)](https://github.com/xerifg/MyNotebook/blob/main/materials/dqn-atari.pdf)
@@ -137,6 +163,7 @@
 * [Python中常用的矩阵运算有哪些？](https://cs231n.github.io/python-numpy-tutorial/#numpy)
 * [ubuntu终端如何实现科学上网](https://www.jianshu.com/p/3ea31fcca279)
 * [代码是如何驱动硬件的？](https://www.cnblogs.com/zhugeanran/p/8605757.html)
+* [什么是行人重识别技术？](https://blog.csdn.net/qq_30121457/article/details/108918512)
 
 # 代码/项目
 
@@ -144,6 +171,7 @@
 
 * [使用pytorch生成GAN网络](https://github.com/xerifg/Myipynb/blob/main/GAN_pytorch.ipynb)
 * [使用pytorch搭建全连接神经网络识别MINIST数据集的手写数字](https://github.com/xerifg/Myipynb/blob/main/pytorch%2BMINIST.ipynb)
+* [Github-字节跳动的视频人像抠图技术](https://github.com/PeterL1n/RobustVideoMatting)
 
 # 思考
 
