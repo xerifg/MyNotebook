@@ -10,6 +10,10 @@
 
 # 数据结构
 
+一个来自b站up的《剑指offer》的[教程](https://github.com/Jack-Cherish/LeetCode)，包含了各种数据结构的讲解，以及代码实现
+
+浙江大学的数据结构课程，[这里](https://www.bilibili.com/video/BV1JW411i731)
+
 * #### 算法复杂度/Big-O/渐进分析法
 
   [渐进表示（视频）](https://www.youtube.com/watch?v=iOq5kSKqeR4)
@@ -44,6 +48,25 @@
 
   主要是对原始数据的协方差矩阵进行特征分解，提取前k个特征向量，则由这些特征向量组成的矩阵，就是将原数据降维到k维的转换矩阵
 
+# 机器学习
+
+[吴恩达的机器学习课程-b站转载](https://www.bilibili.com/video/BV164411b7dx)
+
+一个b站up的机器学习笔记，[这里](https://github.com/Jack-Cherish/Machine-Learning)
+
+# 深度学习
+
+[吴恩达的深度学习课程-b站转载](https://www.bilibili.com/video/BV1FT4y1E74V)
+
+一个b站up的深度学习笔记，[这里](https://github.com/Jack-Cherish/Deep-Learning)
+
+* #### 深度学习框架
+
+  1. [Pytorch](https://www.bilibili.com/video/BV1Rv411y7oE)
+  2. [Tensorflow](https://www.bilibili.com/video/BV1kW411W7pZ)
+
+
+
 # 神经网络
 
 神经网络可以分为两大类，一类是类似于卷积神经网络的多层神经网络，其中，BP网络是始祖；
@@ -66,18 +89,19 @@
   1. Sigmoid函数
   2. tanh函数
   3. ReLU函数
-
 * 似然函数
   1. Softmax函数
-
-* 学习率
+* 梯度优化器
   1. AdaDrad
   2. AdaDelta
   3. 动量方法
-
+  4. SGD(随机剃度下降)
 * 防止网络过拟合
   1. Dropout
   2. DropConnect
+  3. L1、L2正则化
+  4. 提前结束训练
+  5. 模型集成(训练多个模型，投票表决)
 * 预处理
   1. 均值减法（将样本数据处理为均值为0）
   2. 均一化（将样本数据约束为均值为0，方差为1的标准化数据）
@@ -141,11 +165,30 @@
 
 * [步态数据集](https://raw.githubusercontent.com/xerifg/MyNotebook/main/picture/%E6%AD%A5%E6%80%81%E6%95%B0%E6%8D%AE%E9%9B%86.bmp)
 
+# 目标检测
+
+### 2D目标检测
+
+* [2D目标检测的发展历程及相关论文](https://github.com/hoya012/deep_learning_object_detection)
+
+### 3D目标检测
+
+* [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
+
 # 信号处理
 
 * [自相关与互相关](https://zhuanlan.zhihu.com/p/77072803)
 
   自相关的特点，原信号的自相关信号，虽幅值改变，但保留了原信号的频率特征。常用应用：从杂乱的信号中提取有周期性的隐藏信号
+
+# 机器人
+
+* 机器人仿真平台
+  1. Webots(免费开源)
+  2. coppeliasim
+  3. Gazebo(ROS平台)
+  4. MuJoCo(多用于强化学习的机器人仿真)
+  5. PyBullet(python环境下的仿真模块)
 
 # 工具
 
@@ -164,6 +207,8 @@
 * [ubuntu终端如何实现科学上网](https://www.jianshu.com/p/3ea31fcca279)
 * [代码是如何驱动硬件的？](https://www.cnblogs.com/zhugeanran/p/8605757.html)
 * [什么是行人重识别技术？](https://blog.csdn.net/qq_30121457/article/details/108918512)
+* [如何快速入门人工智能](https://www.bilibili.com/video/BV1Ry4y1h7Kd)
+* [什么是feature scaling，什么时候需要feature scaling？](https://mp.weixin.qq.com/s/ehnoWIg8vK7dX_vFmg4zNQ?scene=25#wechat_redirect)
 
 # 代码/项目
 
