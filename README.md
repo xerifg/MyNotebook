@@ -20,23 +20,44 @@
 
   [Big-O记号  (视频)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN&index=3)
 
-  ## i  一级知识
+   #### i  一级知识
 
-  * #### 数组（Arrays）
+  * 线性表
 
-  * #### 链表（Linked Lists）
+    由同类型**数据元素**构成**有序序列**的线性结构
 
-  * #### 堆栈（Stack）
+  *  数组（Arrays）
 
-  * #### 队列（Queue）
+  * 链表（Linked Lists）
 
-  * #### 哈希表（Hash table）
+    数组与链表是下面各种数据结构实现的物理结构类型
 
-  ## ii 二级知识
+  *  堆栈（Stack）
 
-  * #### 二分查找
+  * 队列（Queue）
   
-  * #### 树
+    循环队列
+  
+  *  哈希表（Hash table）
+  
+  #### ii 二级知识
+  
+  * **查找**
+  
+    1. 顺序查找
+    2. 二分查找
+  
+  * **树**
+  
+    由N个节点构成的有限集合
+  
+    1. 二叉树
+  
+       二叉树的实现方式（数组、链表），二叉树的遍历方式（先序遍历、中序遍历、后序遍历、层序遍历），递归遍历、非递归遍历（利用堆栈、队列）
+  
+       * 斜二叉树
+       * 完美（满）二叉树
+       * 完全二叉树
 
 # 经典算法
 
@@ -190,6 +211,10 @@
   4. MuJoCo(多用于强化学习的机器人仿真)
   5. PyBullet(python环境下的仿真模块)
 
+# 编程
+
+[编程的命名规则](https://blog.csdn.net/qq_43075378/article/details/120717118)
+
 # 工具
 
 
@@ -199,6 +224,7 @@
 - [如何正确使用GitHub](https://www.ixigua.com/6892223361208812043?wid_try=1)
 - [如何正确使用“虚拟机”-docker](https://www.bilibili.com/video/BV1og4y1q7M4?p=1)
 - [敲代码不会给变量起名字？用这个网站啊！](https://unbug.github.io/codelf/#position%20list)
+- [Unity使用手册](https://docs.unity3d.com/Manual/index.html)
 
 # FAQ
 
@@ -209,6 +235,7 @@
 * [什么是行人重识别技术？](https://blog.csdn.net/qq_30121457/article/details/108918512)
 * [如何快速入门人工智能](https://www.bilibili.com/video/BV1Ry4y1h7Kd)
 * [什么是feature scaling，什么时候需要feature scaling？](https://mp.weixin.qq.com/s/ehnoWIg8vK7dX_vFmg4zNQ?scene=25#wechat_redirect)
+* [如何将tensorflow1.0的代码升级到v2.0？](https://www.tensorflow.org/guide/upgrade);[中文博客](https://blog.csdn.net/xovee/article/details/93402172)
 
 # 代码/项目
 
