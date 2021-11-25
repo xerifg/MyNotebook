@@ -17,9 +17,10 @@
 * [深度学习](#深度学习)
 * [神经网络](#神经网络)
 * [强化学习](#强化学习)
-* [数据集](#数据集)
-* [目标检测](#目标检测)
 * [信号处理](#信号处理)
+* [数据处理](#数据处理)
+* [数据集](#数据集)
+* [计算机视觉](#计算机视觉)
 * [机器人](#机器人)
 * [编程](#编程)
 * [工具](#工具)
@@ -545,20 +546,6 @@
 
 * [基本概念(human-level control through deep reinforcement learning)](https://github.com/xerifg/MyNotebook/blob/main/materials/dqn-atari.pdf)
 
-# 数据集
-
-* [步态数据集](https://raw.githubusercontent.com/xerifg/MyNotebook/main/picture/%E6%AD%A5%E6%80%81%E6%95%B0%E6%8D%AE%E9%9B%86.bmp)
-
-# 目标检测
-
-### 2D目标检测
-
-* [2D目标检测的发展历程及相关论文](https://github.com/hoya012/deep_learning_object_detection)
-
-### 3D目标检测
-
-* [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
-
 # 信号处理
 
 * [自相关与互相关](https://zhuanlan.zhihu.com/p/77072803)
@@ -570,6 +557,22 @@
 * 普式分析（Procrustes analysis）[博客](https://www.cnblogs.com/nsnow/p/4745730.html)
 
   Procrustes analysis是一种用来分析形状分布的统计方法。从数学上来讲，普氏分析就是利用最小二乘法寻找形状A到形状B的仿射变换。
+
+# 数据集
+
+* [步态数据集](https://raw.githubusercontent.com/xerifg/MyNotebook/main/picture/%E6%AD%A5%E6%80%81%E6%95%B0%E6%8D%AE%E9%9B%86.bmp)
+
+# 计算机视觉
+
+* ## 目标检测
+
+  * #### 2D目标检测
+
+    [2D目标检测的发展历程及相关论文](https://github.com/hoya012/deep_learning_object_detection)
+
+  * #### 3D目标检测
+
+    [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
 
 # 机器人
 
@@ -616,6 +619,25 @@
 # 编程
 
 [编程的命名规则](https://blog.csdn.net/qq_43075378/article/details/120717118)
+
+**编程解决问题的四大步**：1. 问题的定义 ---> 2. 算法设计 ---> 3. 数据结构的选择 ---> 4. 优化代码
+
+**注意1：**发现具体的代码实现困难时，可以先实现其伪代码来构建程序框架，再将其翻译成具体的代码
+
+**注意2：** 当在一个大项目中添加新功能时，先不要把新写好的程序直接放到大程序里进行调试，先编写一个简单的测试**脚手架**来测试新函数，没有问题后再放入大程序中
+
+### 编程珠玑(如何优化代码)
+
+1. 能用小程序实现的就不要用大程序
+2. 重复的代码使用通用的函数表示
+3. 数据结构决定程序结构
+4. 使用数组重新编写重复代码
+5. 封装复杂结构，例如：封装成结构体或类
+
+### 增加代码安全性
+
+1. 程序中在可能出现错误的位置加入**断言（assert）**,当程序执行到此处出现预料之外的结果，就会直接输出AssertionError
+2. 在可能出现异常的地方添加异常处理模块，例如python中的try...except..
 
 ### C/C++
 
