@@ -12,7 +12,7 @@
 # 目录
 
 * [数据结构](#数据结构)
-* [经典算法](#经典算法)
+* [经典算法&思想](#经典算法&思想)
 * [机器学习](#机器学习)
 * [深度学习](#深度学习)
 * [神经网络](#神经网络)
@@ -32,6 +32,8 @@
 一个来自b站up的《剑指offer》的[教程](https://github.com/Jack-Cherish/LeetCode)，包含了各种数据结构的讲解，以及代码实现
 
 浙江大学的数据结构课程，[这里](https://www.bilibili.com/video/BV1JW411i731)
+
+[代码随想录](https://programmercarl.com/)，一个超级全的数据结构刷题解析和找工作的心得笔记
 
 * #### 算法复杂度/Big-O/渐进分析法
 
@@ -575,6 +577,8 @@
   * #### 3D目标检测
 
     [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
+    
+    [PointNet++的作者亲自讲解3D检测的综述](https://www.bilibili.com/video/BV1wA411p7FZ?spm_id_from=333.999.0.0)
 
 # 机器人
 
@@ -717,3 +721,4 @@
 
 
 
+0
