@@ -453,7 +453,9 @@
 
 # 神经网络
 
-神经网络可以分为两大类，一类是类似于卷积神经网络的多层神经网络，其中，BP网络是始祖；
+<b><details><summary>:orange_book:勘误与转载事宜</summary></b>神经网络可以分为两大类，一类是类似于卷积神经网络的多层神经网络，其中，BP网络是始祖；
+
+</details>
 
 另一类是类似于深度信念网络的相互连接型网络，其中，Hopfied网络是始祖
 
@@ -473,19 +475,27 @@
   1. Sigmoid函数
   2. tanh函数
   3. ReLU函数
+  
 * 似然函数
-  1. Softmax函数
+  1. [Softmax函数](https://blog.csdn.net/lz_peter/article/details/84574716)
+  
 * 梯度优化器
-  1. AdaDrad
-  2. AdaDelta
-  3. 动量方法
-  4. SGD(随机剃度下降)
+  
+  [视频](https://www.bilibili.com/video/BV1Vx411j7pA?from=search&seid=4270052544885788174&spm_id_from=333.337.0.0)
+  
+  1. SGD(随机剃度下降)
+  2. Momentum(动量方法)
+  3. AdaGrad
+  4. AdaDelta
+  5. Adam(Momentum + AdaGrad)
+  
 * 防止网络过拟合
   1. Dropout
   2. DropConnect
   3. L1、L2正则化
   4. 提前结束训练
   5. 模型集成(训练多个模型，投票表决)
+  
 * 预处理
   1. 均值减法（将样本数据处理为均值为0）
   
@@ -579,6 +589,14 @@
     [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
     
     [PointNet++的作者亲自讲解3D检测的综述](https://www.bilibili.com/video/BV1wA411p7FZ?spm_id_from=333.999.0.0)
+  
+  * #### 评价指标
+  
+    [ROC曲线与AUC值](https://blog.csdn.net/dujiahei/article/details/87932096)
+  
+    [Precision, Recall, Accuracy, F1-score, confidence score, IoU, AP, mAP，ROC曲线，P-R曲线](https://www.jianshu.com/p/fd9b1e89f983)
+  
+    
 
 # 机器人
 
@@ -676,6 +694,10 @@
 * #### C/C++
 
 ​		[什么是条件编译？如：#if, #ifndef, #else, #endif](https://blog.csdn.net/qq_36662437/article/details/81476572)
+
+​		[智能指针](https://www.bilibili.com/video/BV1fK411H7CA?from=search&seid=18162903492104110019&spm_id_from=333.337.0.0)
+
+​		[右值引用](https://www.bilibili.com/video/BV1Vq4y1K7ut?from=search&seid=14280358547772966820&spm_id_from=333.337.0.0)
 
 * #### Python
 
