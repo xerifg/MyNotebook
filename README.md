@@ -555,6 +555,25 @@
 
 </details>
 
+* 加速神经网络的推理速度的工具：Openvino(CPU)、TensorRT(GPU)
+
+* <b><details><summary>梯度弥散与梯度爆炸问题</summary></b>
+
+  loss下降到一定程度不动了，和loss先下降一定程度又出现了增长的现象
+
+  * 梯度弥散产生原因：
+    1. 激活函数的“饱和”（使用ReLu作为中间层激活函数）
+    2. 样本中有奇异样本，引起模型无法收敛（使用Batch Normalization）
+    3. 反向传播传播梯度时，随着网络的深度加深，梯度的幅度会急剧减小，导致浅层神经元的权重更新非常缓慢（使用ResNet思想）
+    4. 从数学角度，梯度的连乘，导致了梯度的逐渐消失
+    5. 学习率过大导致模型振荡无法收敛
+
+  * 梯度爆炸产生原因：
+    1. 神经网络的初始权重过大，导致每层网络的反向求导的结果都大于1，这样，梯度相乘就会变得更大
+    2. 学习率非常大而导致
+
+  </details>
+
 # 强化学习
 
 * [基本概念(human-level control through deep reinforcement learning)](https://github.com/xerifg/MyNotebook/blob/main/materials/dqn-atari.pdf)
@@ -695,9 +714,7 @@
 
 ​		[什么是条件编译？如：#if, #ifndef, #else, #endif](https://blog.csdn.net/qq_36662437/article/details/81476572)
 
-​		[智能指针](https://www.bilibili.com/video/BV1fK411H7CA?from=search&seid=18162903492104110019&spm_id_from=333.337.0.0)
-
-​		[右值引用](https://www.bilibili.com/video/BV1Vq4y1K7ut?from=search&seid=14280358547772966820&spm_id_from=333.337.0.0)
+​		[智能指针](https://www.bilibili.com/video/BV1fK411H7CA?from=search&seid=18162903492104110019&spm_id_from=333.337.0.0)、[右值引用](https://www.bilibili.com/video/BV1Vq4y1K7ut?from=search&seid=14280358547772966820&spm_id_from=333.337.0.0)、[函数指针](https://www.bilibili.com/video/BV1uz41187DQ?from=search&seid=221618835148746806&spm_id_from=333.337.0.0)
 
 * #### Python
 
