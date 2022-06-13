@@ -20,6 +20,7 @@
 * [信号处理](#信号处理)
 * [数据处理](#数据处理)
 * [计算机视觉](#计算机视觉)
+* 渲染(#渲染)
 * [机器人](#机器人)
 * [编程](#编程)
 * [工具](#工具)
@@ -584,7 +585,7 @@
 
   </details>
 
-### <b><details><summary>经典神经网络</summary></b>
+### <details><summary>经典神经网络</summary>
 
 * CNN
 
@@ -632,6 +633,41 @@
     [Precision, Recall, Accuracy, F1-score, confidence score, IoU, AP, mAP，ROC曲线，P-R曲线](https://www.jianshu.com/p/fd9b1e89f983)
   
     
+# 渲染
+
+视频教程：[games-101](https://www.bilibili.com/video/BV1X7411F744?p=1)
+
+* 变换
+
+  * 正交变换
+  * 透视变换（可以产生近大远小）
+
+* 光栅化(Rasterrization)
+
+  用于将空间中的物体投影到相机平面中，即将空间中的物体在相机平面中“画”出来的操作叫光栅化
+
+  * Triangles
+
+  * 反走样
+
+    如何去除成像图面上的锯齿
+
+    1直接增大成像图面分辨率
+
+    2从频域角度考虑，有一种方案是：先进行低通滤波去除高频信息（让图像变模糊）再进行采样
+
+    2从频域角度考虑，有一种方案是：先进行低通滤波去除高频信息（让图像变模糊）再进行采样
+
+* 着色(shading)
+
+  * 解决遮挡问题（前后景距离不同）
+    * 画家画法（先画远的再画近的）
+    * Z-Buffer（从成像图面的像素角度，即每个像素记录距离最近的深度度，将目标深度最小的目标画在该像素上）
+
+  * 着色（光源，材质，角度）
+    * 漫反射
+    * 高光
+    * 环境光
 
 # 机器人
 
@@ -674,6 +710,18 @@
   3. Gazebo(ROS平台)
   4. MuJoCo(多用于强化学习的机器人仿真)
   5. PyBullet(python环境下的仿真模块)
+
+# 动作捕捉
+
+### <details><summary>相关文章、论坛</summary>
+
+*  [人体姿态估计(Human Pose Estimation)经典方法整理](https://zhuanlan.zhihu.com/p/104917833)
+*  [2020CVPR人体姿态估计论文盘点](http://www.360doc.com/content/21/0602/13/61825250_980111489.shtml)
+*  [【CVPR 2021】PRTR：基于transformer的2D Human Pose Estimation](https://zhuanlan.zhihu.com/p/368067142)
+
+</details>
+
+
 
 # 编程
 
