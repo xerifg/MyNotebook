@@ -584,11 +584,11 @@
   
   </details>
 
-### <b><details><summary>经典神经网络</summary></b>
+<b><details><summary>经典神经网络</summary></b>
 
-​		CNN
+CNN
 
-### </details>
+</details>
 
 # 强化学习
 
@@ -712,7 +712,7 @@
 
 # 动作捕捉
 
-### <details><summary>相关文章、论坛</summary>
+<b><details><summary>相关文章、论坛</summary></b>
 
 *  [人体姿态估计(Human Pose Estimation)经典方法整理](https://zhuanlan.zhihu.com/p/104917833)
 *  [2020CVPR人体姿态估计论文盘点](http://www.360doc.com/content/21/0602/13/61825250_980111489.shtml)
