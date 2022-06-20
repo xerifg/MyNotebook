@@ -638,12 +638,12 @@ CNN
 
 <b><details><summary>教程笔记</summary></b>
 
-* 变换
+* **变换**
 
   * 正交变换
   * 透视变换（可以产生近大远小）
 
-* 光栅化(Rasterrization)
+* **光栅化(Rasterrization)**
 
   用于将空间中的物体投影到相机平面中，即将空间中的物体在相机平面中“画”出来的操作叫光栅化
 
@@ -659,16 +659,43 @@ CNN
 
     2从频域角度考虑，有一种方案是：先进行低通滤波去除高频信息（让图像变模糊）再进行采样
 
-* 着色(shading)
+* **着色(shading)**
 
   * 解决遮挡问题（前后景距离不同）
+
     * 画家画法（先画远的再画近的）
     * Z-Buffer（从成像图面的像素角度，即每个像素记录距离最近的深度度，将目标深度最小的目标画在该像素上）
 
   * 着色（光源，材质，角度）
+
     * [漫反射](https://github.com/xerifg/MyNotebook/blob/main/picture/diffuse.png)
-    * 高光
-    * 环境光
+    * [高光](https://github.com/xerifg/MyNotebook/blob/main/picture/specular.png)
+    * [环境光](https://github.com/xerifg/MyNotebook/blob/main/picture/ambient.png)
+
+    将漫反射、高光、环境光叠加，即可构成着色模型，[效果图](https://github.com/xerifg/MyNotebook/blob/main/picture/blinn.png)
+
+    * 着色频率
+
+      并不一定要对图片中物体的所有像素依次利用着色模型进行着色，可以对其一“块”进行统一着色，按照“块”的划分，可以分为三类
+
+      * Flat shading
+      * Gouraud shading
+      * Phong shading
+
+  * Texture Mapping
+
+    用于给物体进行“贴图”，或者说在控制每个点的属性，其本质上是在控制每个点在着色时的漫反射的kd系数，进而控制该点的颜色。
+
+    * MIPMAP
+
+    Texture的其他用途:
+
+    * 记录环境光
+    * 凹凸贴图
+
+将上述的投影变换、光栅化、着色三个模块合在一起，便可构成渲染pipeline，[示意图](https://github.com/xerifg/MyNotebook/blob/main/picture/render_pipeline.png)
+
+* **几何**
 
 </details>
 
