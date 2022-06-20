@@ -636,6 +636,8 @@ CNN
 
 视频教程：[games-101](https://www.bilibili.com/video/BV1X7411F744?p=1)
 
+<b><details><summary>教程笔记</summary></b>
+
 * 变换
 
   * 正交变换
@@ -664,9 +666,13 @@ CNN
     * Z-Buffer（从成像图面的像素角度，即每个像素记录距离最近的深度度，将目标深度最小的目标画在该像素上）
 
   * 着色（光源，材质，角度）
-    * 漫反射
+    * [漫反射](https://github.com/xerifg/MyNotebook/blob/main/picture/diffuse)
     * 高光
     * 环境光
+
+</details>
+
+
 
 # 机器人
 
@@ -792,6 +798,7 @@ CNN
 - [敲代码不会给变量起名字？用这个网站啊！](https://unbug.github.io/codelf/#position%20list)
 - [Unity3D使用手册](https://docs.unity3d.com/Manual/index.html)
 - [远程链接助手-tmux，将前端与后端分离](https://zhuanlan.zhihu.com/p/98384704)
+- [windows下的全能终端神器-mobaXterm](https://blog.csdn.net/xuanying_china/article/details/120080644)
 
 # FAQ
 
