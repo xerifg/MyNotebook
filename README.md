@@ -666,7 +666,7 @@ CNN
     * Z-Buffer（从成像图面的像素角度，即每个像素记录距离最近的深度度，将目标深度最小的目标画在该像素上）
 
   * 着色（光源，材质，角度）
-    * [漫反射](https://github.com/xerifg/MyNotebook/blob/main/picture/diffuse)
+    * [漫反射](https://github.com/xerifg/MyNotebook/blob/main/picture/diffuse.png)
     * 高光
     * 环境光
 
