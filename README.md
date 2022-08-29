@@ -695,7 +695,95 @@ CNN
 
 将上述的投影变换、光栅化、着色三个模块合在一起，便可构成渲染pipeline，[示意图](https://github.com/xerifg/MyNotebook/blob/main/picture/render_pipeline.png)
 
-* **几何**
+* **几何**(Geometry)
+
+  不是所有的物体都适合用三角形进行表示的
+
+  * 几何的表示方式
+    * implicit
+      * 代数表示：x^2+y^2+z^2=1
+      * 基础形状的相互组合
+      * Distance Functions
+      
+    * explicit
+    
+      * Point Cloud
+    
+      * Polygon Mesh
+    
+      * Curves
+    
+        * 贝塞尔曲线
+          * de Casteljau algorithm(如何画出贝塞尔曲线)
+        * Spline(样条)：可以控制的曲线
+    
+      * Surfaces
+    
+        * 贝塞尔曲面
+    
+        * Mesh Subdivision(曲面细分)
+    
+          * Loop Subdivision(先细分再调整,只针对三角形)
+          * Catmull-Clark Subdivision(可以应用在不止三角形面)
+    
+        * Mesh Simplification(曲面简化(减少曲面个数))
+    
+          * Edge Collapse
+    
+            如何选择那个边进行collapse,通过最小化Quadric Error
+  
+* **光线追踪**(Ray Tracing)
+
+  如何渲染出阴影？可以使用Shadow Mapping
+  
+  * Recursive Ray Tracing(发生了多次反射折射)
+  * Ray-Intersection
+    * Ray-Intersection With Box(简化求光线相交的计算量)
+    * Ray-Scene Intersection(简化求光线与Box中的那个object相交)
+    * Spatial Partition
+      * Oct-Tree
+      * KD-Tree
+      * BSP-Tree
+  * 辐射度量学(Radiometry)(更准确的描述光线)
+  
+* **Materials and Appearances**
+
+  决定了object的反射相关的系数，例如镜面反射、漫反射、折射
+
+  Materials==BRDF
+
+  * Microfacet Material
+
+    从远处看看到的是材质，近处看是很多的微小镜面
+
+  * 材质分类
+
+    * Isotropic(微表面没有方向)
+    * Anisitropic(微表面有方向，如金属)
+  
+* **Color and Perception**
+
+  * Light Field(or Lumigraph)(光场)
+
+    记录物体表面任一点沿任意方向的光的强度。
+  
+* **Animation**
+
+  * 物理模型
+
+    * Mass Spring System(质点弹簧系统)
+
+      复杂的object可以由一系列的质点弹簧系统组成
+
+    * Particle System(粒子系统)
+
+  * Kinematices
+
+    * Forward Kinematices
+    * Inverse Kinematices
+
+  * Rigging(对模型的动作pose的控制，类似于提线木偶)
+
 
 </details>
 
