@@ -439,6 +439,8 @@
 
   利用贝叶斯公式的条件概率公式进行条件概率转换来完成预测
 
+* SVM（[支持向量机](https://www.bilibili.com/video/BV16T4y1y7qj/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)）
+
 # 深度学习
 
 [吴恩达的深度学习课程-b站转载](https://www.bilibili.com/video/BV1FT4y1E74V)
@@ -618,6 +620,42 @@ CNN
 
 # 计算机视觉
 
+* ## 图像处理
+
+  <b><details><summary>常用的图像处理算法</summary></b>
+  
+  * 图像滤波
+  
+    均值滤波、中值滤波、高斯滤波、双边滤波、低通滤波、高通滤波
+  
+  * 图像增强
+  
+    直方图均衡化
+  
+  * 图像边缘检测（锐化）
+  
+    梯度锐化、Sobel算子、Laplace算子
+  
+  * 图像分割
+  
+    阈值分割（固定阈值、自适应阈值等等）、Canny边缘检测、Hough变换、语义分割
+  
+  * 图像形态学
+  
+    腐蚀、膨胀、开运算、闭运算
+  
+  * 图像特征
+  
+    角点（Harris算法）、几何特征、直方图特征（均值方差等）、颜色特征
+  
+  * 图像复原
+  
+  * 图像压缩
+  
+    行程编码、霍尔曼编码
+  
+  </details>
+  
 * ## 数据集
 
   * [数据集搜索地址](https://paperswithcode.com/datasets?mod=images)
