@@ -433,13 +433,48 @@
 
 一个b站up的机器学习笔记，[这里](https://github.com/Jack-Cherish/Machine-Learning)
 
-* K最近邻（分类、回归）
+<b><details><summary>常见的机器学习算法</summary></b>
 
-* 朴素贝叶斯分类器（朴素指的是特征之间相互独立）
+* **监督学习**
 
-  利用贝叶斯公式的条件概率公式进行条件概率转换来完成预测
+  *分类与回归问题都是有标签的监督学习*
 
-* SVM（[支持向量机](https://www.bilibili.com/video/BV16T4y1y7qj/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)）
+  * [K近邻算法(KNN)](https://zhuanlan.zhihu.com/p/25994179)
+
+  * [决策树]([[5分钟学算法\] #03 决策树 小明毕业当行长_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ar4y137GD/?spm_id_from=333.337.search-card.all.click&vd_source=36f81f373ea58937a8b5ec640201633c))
+
+  * [Logistic回归]([[5分钟学算法\] #04 逻辑斯谛回归 超神超鬼几几开_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV17r4y137bW/?spm_id_from=333.788&vd_source=36f81f373ea58937a8b5ec640201633c))
+
+  * [朴素贝叶斯分类器]([[5分钟学算法\] #02 朴素贝叶斯 写作业还得看小明_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1eT411V7jM/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263))（朴素指的是特征之间相互独立）
+
+    利用贝叶斯公式的条件概率公式进行条件概率转换来完成预测
+
+  * [SVM(支持向量机)](https://www.bilibili.com/video/BV16T4y1y7qj/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
+
+  * [集成算法](https://zhuanlan.zhihu.com/p/30035094)
+
+    将多个分类器组合在一起的分类、回归算法
+
+    * Bagging
+
+      有放回的随机采样
+
+    * Boosting
+
+      给样本增加权重
+
+      * [AdaBoost]([Adaboosting介绍_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1dk4y117cW/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263))（是Boosting思想的一种具体实现算法）
+
+* **半监督学习**
+
+* **无监督学习**
+
+  * [EM算法(高斯混合模型)]([[5分钟学算法\] #06 EM算法 你到底是哪个班级的_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1RT411G7jJ/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263))
+  * [K均值(KMeans)](https://zhuanlan.zhihu.com/p/78798251)
+
+</details>
+
+
 
 # 深度学习
 
@@ -598,7 +633,8 @@
 
 <b><details><summary>经典神经网络</summary></b>
 
-CNN
+* CNN
+* [Transformer]([【Transformer模型】曼妙动画轻松学，形象比喻贼好记_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1MY41137AK/?spm_id_from=333.337.search-card.all.click&vd_source=36f81f373ea58937a8b5ec640201633c))
 
 </details>
 
@@ -949,6 +985,26 @@ CNN
 ​		[智能指针](https://www.bilibili.com/video/BV1fK411H7CA?from=search&seid=18162903492104110019&spm_id_from=333.337.0.0)、[右值引用](https://www.bilibili.com/video/BV1Vq4y1K7ut?from=search&seid=14280358547772966820&spm_id_from=333.337.0.0)、[函数指针](https://www.bilibili.com/video/BV1uz41187DQ?from=search&seid=221618835148746806&spm_id_from=333.337.0.0)
 
 * #### Python
+
+  python中万物皆**对象**
+
+  <b><details><summary>常问问题</summary></b>
+
+  * 可变对象：list、dict、set
+  * python装饰器
+  * python中的序列化与反序列化
+  * 垃圾回收机制：1.引用计数；2.标记-清除；3.分代回收
+  * 列表与元组的区别：元组元素不可变
+  * lambda表达式：不用起名字的函数
+  * python迭代器、生成器
+  * python中的docstring：用一对三个单引号括起来的，对函数的功能的说明文字
+  * python中的包与模块，\__init__.py
+  * global关键字：在函数内对函数外的变量进行操作
+  * python中的三元运算符：a if a>b else b
+
+  </details>
+
+  
 
 # 工具
 
