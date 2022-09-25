@@ -441,11 +441,11 @@
 
   * [K近邻算法(KNN)](https://zhuanlan.zhihu.com/p/25994179)
 
-  * [决策树]([[5分钟学算法\] #03 决策树 小明毕业当行长_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ar4y137GD/?spm_id_from=333.337.search-card.all.click&vd_source=36f81f373ea58937a8b5ec640201633c))
+  * [决策树](https://www.bilibili.com/video/BV1ar4y137GD/?spm_id_from=333.788)
 
-  * [Logistic回归]([[5分钟学算法\] #04 逻辑斯谛回归 超神超鬼几几开_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV17r4y137bW/?spm_id_from=333.788&vd_source=36f81f373ea58937a8b5ec640201633c))
+  * [Logistic回归](https://www.bilibili.com/video/BV17r4y137bW/?spm_id_from=333.788&vd_source=36f81f373ea58937a8b5ec640201633c)
 
-  * [朴素贝叶斯分类器]([[5分钟学算法\] #02 朴素贝叶斯 写作业还得看小明_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1eT411V7jM/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263))（朴素指的是特征之间相互独立）
+  * [朴素贝叶斯分类器](https://www.bilibili.com/video/BV1eT411V7jM/?spm_id_from=333.788)（朴素指的是特征之间相互独立）
 
     利用贝叶斯公式的条件概率公式进行条件概率转换来完成预测
 
@@ -634,7 +634,7 @@
 <b><details><summary>经典神经网络</summary></b>
 
 * CNN
-* [Transformer]([【Transformer模型】曼妙动画轻松学，形象比喻贼好记_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1MY41137AK/?spm_id_from=333.337.search-card.all.click&vd_source=36f81f373ea58937a8b5ec640201633c))
+* [Transformer](https://www.bilibili.com/video/BV1MY41137AK/)
 
 </details>
 
