@@ -469,7 +469,7 @@
 
 * **无监督学习**
 
-  * [EM算法(高斯混合模型)]([[5分钟学算法\] #06 EM算法 你到底是哪个班级的_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1RT411G7jJ/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263))
+  * [EM算法(高斯混合模型)](https://www.bilibili.com/video/BV1RT411G7jJ/?spm_id_from=333.788)
   * [K均值(KMeans)](https://zhuanlan.zhihu.com/p/78798251)
 
 </details>
@@ -1047,7 +1047,3 @@
 * [年轻时候做点什么投资自己，才能受益终身？](https://www.ixigua.com/6895365107195314701)
 
 
-
-
-
-0
