@@ -634,6 +634,67 @@
 <b><details><summary>经典神经网络</summary></b>
 
 * CNN
+
+* AlexNet
+
+* VGGNet
+
+  首次使用更小的卷积核和更深的网络结构
+
+* Inception(GoogLeNet)
+
+  首次提出Inception模块(使用不同的卷积核进行卷积，然后进行通道concat)；
+
+  首次提出用1*1的卷积核进行降维
+
+* ResNet
+
+  首次提出残差连接，解决网络加深带来的梯度消失等问题
+
+* DenseNet
+
+  提出了Dense Block概念(每层的输入由前面所有卷积层的输出组成【使用通道的concat进行的拼接】)
+
+* FPN(特征金字塔)
+
+  提出了通过融合不同层的特征来改善多尺度的检测问题，包括四部分：自下而上、自上而下、横向连接、卷积融合
+
+* DetNet
+
+  在ResNet的结构的基础上提出了空洞卷积，使得模型兼顾较大的感受野与较高的分辨率
+
+* Faster RCNN
+
+  经典的两阶段物体检测
+
+* Mask RCNN
+
+  在Faster RCNN的基础上进行改进的一种分割网络
+
+* SSD
+
+  经典的单阶段物体检测
+
+* YOLO
+
+  经典的单阶段物体检测
+
+* SqueezeNet
+
+  轻量型网络
+
+* MobileNet
+
+  轻量型网络
+
+* CornerNet
+
+  free anchor，基于角点的检测
+
+* CenterNet
+
+  free anchor，基于中心点的检测
+
 * [Transformer](https://www.bilibili.com/video/BV1MY41137AK/)
 
 </details>
@@ -716,6 +777,33 @@
     [Precision, Recall, Accuracy, F1-score, confidence score, IoU, AP, mAP，ROC曲线，P-R曲线](https://www.jianshu.com/p/fd9b1e89f983)
   
     
+
+* ## 3D重建
+
+  **基础概念**
+
+  TSDF：3D重建结果的表示方法,mesh重建算法的表示形式
+
+  SMPL：人体3维模型
+
+  * #### 场景重建
+
+    <b><details><summary>相关算法</summary></b>
+
+    * [NeuralRecon](https://github.com/zju3dv/NeuralRecon)
+    * BundleFusion
+  
+    </details>
+  
+  * #### 人体重建
+  
+    <b><details><summary>相关算法</summary></b>
+  
+    * [MeshTransformer](https://github.com/microsoft/MeshTransformer)
+    * GLAMR
+    
+    </details>
+
 # 渲染
 
 视频教程：[games-101](https://www.bilibili.com/video/BV1X7411F744?p=1)
@@ -1045,5 +1133,4 @@
 # 思考
 
 * [年轻时候做点什么投资自己，才能受益终身？](https://www.ixigua.com/6895365107195314701)
-
 
