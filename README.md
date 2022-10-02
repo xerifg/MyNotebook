@@ -425,7 +425,15 @@
 
 * [PCA降维](https://zhuanlan.zhihu.com/p/32412043)
 
-  主要是对原始数据的协方差矩阵进行特征分解，提取前k个特征向量，则由这些特征向量组成的矩阵，就是将原数据降维到k维的转换矩阵
+  主要是对原始数据的协方差矩阵进行特征分解，提取前k个特征向量，则由这些特征向量组成的矩阵，就是将原数据降维到k维的转换矩阵。[视频讲解](https://www.bilibili.com/video/BV1E5411E71z/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
+
+* [SVD分解](https://www.bilibili.com/video/BV16A411T7zX/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263)
+
+* [匈牙利匹配](https://www.bilibili.com/video/BV16K4y1X7Ph/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
+
+* [VAE(变分自编码器)](https://www.bilibili.com/video/BV1f34y1e7EK/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
+
+* [HMM隐马尔可夫](https://www.bilibili.com/video/BV14R4y1N7iH/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263)
 
 # 机器学习
 
@@ -500,7 +508,11 @@
   
   2. [Tensorflow](https://www.bilibili.com/video/BV1kW411W7pZ)
 
+* #### 模型的部署与加速
 
+  * **torch2trt**：python中的使用tensorRT进行网络推理加速的模块，1.进行了kernel融合，2.提升GPU利用率，直接提升网络的推理速度，网络中有不支持的算子则无法使用；经过torch2trt处理后的模型仍然是torch的网络模型。torch2trt可以直接将torch模型转换为tensorRT的加速推理模型。[演示视频](https://www.bilibili.com/video/BV1AU4y127Uo/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263)
+  * **trtorch**：可以实现将加载的网络模型转换为tensorRT的加速推理模型，torch模型的保存、加载、使用trtorch进行部署加速，[演示视频](https://www.bilibili.com/video/BV1ky4y167TG/?spm_id_from=333.788.recommend_more_video.4&vd_source=8c065934da63850a7afd383a2017d263)
+  * [模型的剪枝、量化、蒸馏](https://zhuanlan.zhihu.com/p/282777488)
 
 # 神经网络
 
@@ -514,7 +526,7 @@
     * [Embedding](https://blog.csdn.net/weixin_44493841/article/details/95341407)
 * 损失(代价)函数
   1. 最小二乘误差函数（二次代价函数）
-  2. [交叉熵代价函数](https://blog.csdn.net/u014313009/article/details/51043064)
+  2. [交叉熵代价函数](https://zhuanlan.zhihu.com/p/38241764)
   3. 对比损失(Contrastive loss)：多用于度量学习
   4. [三元组损失(Triplet loss)](https://blog.csdn.net/u013082989/article/details/83537370):多用于度量学习(Metric learning)
   5. 四元组损失(Quadruplet loss)：多用于度量学习
@@ -786,10 +798,12 @@
 
   SMPL：人体3维模型
 
+  GHUM：谷歌提出的一种可训练产生的人体3D模型
+
   * #### 场景重建
 
     <b><details><summary>相关算法</summary></b>
-
+  
     * [NeuralRecon](https://github.com/zju3dv/NeuralRecon)
     * BundleFusion
   
