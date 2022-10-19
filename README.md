@@ -23,12 +23,11 @@
 * [计算机视觉](#计算机视觉)
 * [渲染](#渲染)
 * [机器人](#机器人)
-* [动作捕捉](#动作捕捉)
 * [编程](#编程)
 * [工具](#工具)
 * [FAQ](#FAQ)
 * [代码/项目](#代码/项目)
-* [思考](#思考)
+* [已读论文](#已读论文)
 
 # 基础数学
 
@@ -421,6 +420,8 @@
 
 * [卡尔曼滤波](https://zhuanlan.zhihu.com/p/45238681)
 
+* [卡尔曼平滑](https://blog.csdn.net/weixin_42647783/article/details/106035691)
+
 * [马尔可夫链](https://www.bilibili.com/video/BV19b4y127oZ?from=search&seid=11829849833797645360&spm_id_from=333.337.0.0)
 
 * [PCA降维](https://zhuanlan.zhihu.com/p/32412043)
@@ -434,6 +435,12 @@
 * [VAE(变分自编码器)](https://www.bilibili.com/video/BV1f34y1e7EK/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
 
 * [HMM隐马尔可夫](https://www.bilibili.com/video/BV14R4y1N7iH/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263)
+
+* [信息量、熵、KL散度、交叉熵](https://www.bilibili.com/video/BV15V411W7VB/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
+
+* [SIFT算法](https://www.bilibili.com/video/BV1Hb411r7n8/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)-图片的特征点提取
+
+* [Loftr](https://www.bilibili.com/video/BV19e4y1z7C7?p=1&vd_source=8c065934da63850a7afd383a2017d263)-end to end的特征点提取与匹配（使用了transformer）
 
 # 机器学习
 
@@ -482,8 +489,6 @@
 
 </details>
 
-
-
 # 深度学习
 
 [吴恩达的深度学习课程-b站转载](https://www.bilibili.com/video/BV1FT4y1E74V)
@@ -524,12 +529,17 @@
   * 编码方式
     * 独热编码（one hot encoding）
     * [Embedding](https://blog.csdn.net/weixin_44493841/article/details/95341407)
+  
 * 损失(代价)函数
+
+  [损失函数是如何被设计出来的？](https://www.bilibili.com/video/BV1Y64y1Q7hi/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263)
+
   1. 最小二乘误差函数（二次代价函数）
-  2. [交叉熵代价函数](https://zhuanlan.zhihu.com/p/38241764)
+  2. [交叉熵代价函数](https://zhuanlan.zhihu.com/p/38241764)     [视频](https://www.bilibili.com/video/BV15V411W7VB/?spm_id_from=333.788&vd_source=8c065934da63850a7afd383a2017d263)
   3. 对比损失(Contrastive loss)：多用于度量学习
   4. [三元组损失(Triplet loss)](https://blog.csdn.net/u013082989/article/details/83537370):多用于度量学习(Metric learning)
   5. 四元组损失(Quadruplet loss)：多用于度量学习
+  6. [smooth L1损失](https://blog.csdn.net/weixin_41940752/article/details/93159710?ops_request_misc=%7B%22request%5Fid%22%3A%22160525394119724842952021%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=160525394119724842952021&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-3-93159710.pc_first_rank_v2_rank_v28p&utm_term=smooth L1&spm=1018.2118.3001.4449)
 
 
 * 激活函数
@@ -565,6 +575,8 @@
   
   5. 模型集成(训练多个模型，投票表决)
   
+  6. BN层
+  
 * 预处理
   1. 均值减法（将样本数据处理为均值为0）
   
@@ -573,6 +585,34 @@
      [为什么神经网络训练前需要进行标准化(Normalization)？](https://blog.csdn.net/keeppractice/article/details/105330513)
   
   3. 白化（消除样本数据间的相关性）
+
+* 神经网络的基本组成
+
+  <b><details><summary>网络中的各种层</summary></b>
+
+  * 卷积层：普通卷积、空洞卷积
+
+  * 激活函数层：Sigmoid、Softmax
+
+  * 池化层：最大值池化、平均值池化
+
+  * Dropout层：防止过拟合
+
+  * BN层：缓解梯度消失，模型稳定
+
+    从数据分布的角度避免参数陷入饱和区，其核心是对输入数据进行去均值与方差的操作，为使修改后的数据尽可能恢复原数据的表达能力，在上一步操作后添加了线性操作。
+
+    <b><details><summary>优点</summary></b>
+
+    * 缓解梯度消失，加速网络收敛。让激活函数的输入数据落在了非饱和区，缓解了梯度消失的问题。
+    * 简化调参，网络更稳定。BN层抑制了参数的微小变化随网络加深二被放大的问题
+    * 防止过拟合。BN层将每个batch均值与方差引入到网络中，相当于给训练过程增加了随机噪声，可以起到一定的正则效果，防止过拟合。
+
+    </details>
+
+  * 全连接层：分类
+
+  </details>
 
 ## 1. 卷积神经网路
 
@@ -765,58 +805,111 @@
   
   </details>
   
+* ## 感知与重建
+
+  * ### 2D感知
+
+    [2D目标检测的发展历程及相关论文](https://github.com/hoya012/deep_learning_object_detection)
+
+    <b><details><summary>相关算法</summary></b>
+
+    * [RetinaNet](https://www.bilibili.com/video/BV1g3411z72f/?spm_id_from=333.337.search-card.all.click&vd_source=8c065934da63850a7afd383a2017d263)
+
+    </details>
+
+  * ### 3D感知
+
+    [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
+
+    [PointNet++的作者亲自讲解3D检测的综述](https://www.bilibili.com/video/BV1wA411p7FZ?spm_id_from=333.999.0.0)
+
+    [视差图计算深度](https://blog.csdn.net/fb_help/article/details/83339092)
+
+    [单目的深度估计综述](https://zhuanlan.zhihu.com/p/111759578)
+
+    <b><details><summary>主要方法</summary></b>
+
+    * 被动感知
+      * 单目3D
+        * 反变换（需要知道必要的先验知识，如目标的大小已知）
+        * 关键点和3D模型（2D模型感知关键点，然后于3D模型做匹配）
+          * [Deep MANTA](https://zhuanlan.zhihu.com/p/25996617)（2017）
+        * 几何约束（通过几何约束确定目标的3D位置，使用网络预测目标大小与方向）
+          * [MonoGRNet](https://blog.csdn.net/abrams90/article/details/98484420)（2019）
+        * 直接预测3D模型（纯网络方法）
+      * 双目3D
+        * [PSMNet](https://blog.csdn.net/weixin_45614254/article/details/110708111)（2018）
+        * STereo TRansformers
+      * 多目3D
+        * FSD
+    * 主动感知
+      * 结构光法
+      * TOF飞行时间法
+      * 激光三角测距法
+
+    </details>
+
+  * ### 3D重建
+
+    [基于多视图几何的三维重建](https://apposcmf8kb5033.pc.xiaoe-tech.com/live_pc/l_5ea4fa067411e_oJ22mYIW)
+
+    **基础概念**
+
+    TSDF：3D重建结果的表示方法,mesh重建算法的表示形式
+
+    * #### 场景重建
+
+      <b><details><summary>相关算法</summary></b>
+
+      * [NeuralRecon](https://github.com/zju3dv/NeuralRecon)
+      * BundleFusion
+      * [Possion Reconstruction(泊松重建)](https://groups.google.com/group/seminair-si350/attach/46ed857dec1bb9e5/泊松表面重建(英译汉版本).pdf?part=0.1)：目前较为成熟的光滑mesh重建经典算法
+
+      </details>
+
+* ## 人体方向
+
+  <b><details><summary>相关文章、论坛</summary></b>
+
+  *  [人体姿态估计(Human Pose Estimation)经典方法整理](https://zhuanlan.zhihu.com/p/104917833)
+  *  [2020CVPR人体姿态估计论文盘点](http://www.360doc.com/content/21/0602/13/61825250_980111489.shtml)
+  *  [【CVPR 2021】PRTR：基于transformer的2D Human Pose Estimation](https://zhuanlan.zhihu.com/p/368067142)
+
+  </details>
+
+  * ### 2D感知
+
+  * ### 3D感知
+
+  * ### 3D重建
+
+    **基础概念**
+
+    SMPL：人体3维模型
+
+    GHUM：谷歌提出的一种可训练产生的人体3D模型
+
+    * #### 人体重建
+
+      <b><details><summary>相关算法</summary></b>
+
+      * [MeshTransformer](https://github.com/microsoft/MeshTransformer)
+      * GLAMR
+
+      </details>
+
 * ## 数据集
 
   * [数据集搜索地址](https://paperswithcode.com/datasets?mod=images)
   * [步态数据集](https://raw.githubusercontent.com/xerifg/MyNotebook/main/picture/%E6%AD%A5%E6%80%81%E6%95%B0%E6%8D%AE%E9%9B%86.bmp)
+
+* ## 评价指标
+
+  [ROC曲线与AUC值](https://blog.csdn.net/dujiahei/article/details/87932096)
+
+  [Precision, Recall, Accuracy, F1-score, confidence score, IoU, AP, mAP，ROC曲线，P-R曲线](https://www.jianshu.com/p/fd9b1e89f983)
+
   
-* ## 目标检测
-
-  * #### 2D目标检测
-
-    [2D目标检测的发展历程及相关论文](https://github.com/hoya012/deep_learning_object_detection)
-
-  * #### 3D目标检测
-
-    [3D目标检测综述CSDN](https://blog.csdn.net/wqwqqwqw1231/article/details/90693612)
-    
-    [PointNet++的作者亲自讲解3D检测的综述](https://www.bilibili.com/video/BV1wA411p7FZ?spm_id_from=333.999.0.0)
-  
-  * #### 评价指标
-  
-    [ROC曲线与AUC值](https://blog.csdn.net/dujiahei/article/details/87932096)
-  
-    [Precision, Recall, Accuracy, F1-score, confidence score, IoU, AP, mAP，ROC曲线，P-R曲线](https://www.jianshu.com/p/fd9b1e89f983)
-  
-    
-
-* ## 3D重建
-
-  **基础概念**
-
-  TSDF：3D重建结果的表示方法,mesh重建算法的表示形式
-
-  SMPL：人体3维模型
-
-  GHUM：谷歌提出的一种可训练产生的人体3D模型
-
-  * #### 场景重建
-
-    <b><details><summary>相关算法</summary></b>
-  
-    * [NeuralRecon](https://github.com/zju3dv/NeuralRecon)
-    * BundleFusion
-  
-    </details>
-  
-  * #### 人体重建
-  
-    <b><details><summary>相关算法</summary></b>
-  
-    * [MeshTransformer](https://github.com/microsoft/MeshTransformer)
-    * GLAMR
-    
-    </details>
 
 # 渲染
 
@@ -981,7 +1074,9 @@
 
   * 旋转的几种表示方式：欧拉角、[轴角](https://zh.wikipedia.org/wiki/%E8%BD%B4%E8%A7%92)、旋转矩阵、四元数
 
-  * 旋转向量
+  * 欧拉角：会产生万向节死锁的现象
+
+  * [旋转向量](https://www.bilibili.com/video/BV1W3411E7XR/?spm_id_from=333.788.recommend_more_video.1&vd_source=8c065934da63850a7afd383a2017d263)
 
     轴角的一种表示方式，其向量的模代表旋转的角度，向量方向代表所绕的轴的方向
 
@@ -991,7 +1086,7 @@
 
     旋转矩阵的乘积表示两次旋转的叠加
 
-  * 四元数（[博客1](https://www.jianshu.com/p/7aa0fd8503c5)、[博客2](https://blog.csdn.net/shenshen211/article/details/78492055)、[博客3](http://www.wy182000.com/2012/07/17/quaternion%E5%9B%9B%E5%85%83%E6%95%B0%E5%92%8C%E6%97%8B%E8%BD%AC%E4%BB%A5%E5%8F%8Ayaw-pitch-roll-%E7%9A%84%E5%90%AB%E4%B9%89/)）
+  * [四元数](https://www.bilibili.com/video/BV1bq4y1F7Yp/?spm_id_from=autoNext&vd_source=8c065934da63850a7afd383a2017d263)（[博客1](https://www.jianshu.com/p/7aa0fd8503c5)、[博客2](https://blog.csdn.net/shenshen211/article/details/78492055)、[博客3](http://www.wy182000.com/2012/07/17/quaternion%E5%9B%9B%E5%85%83%E6%95%B0%E5%92%8C%E6%97%8B%E8%BD%AC%E4%BB%A5%E5%8F%8Ayaw-pitch-roll-%E7%9A%84%E5%90%AB%E4%B9%89/)）
 
     用四个数表示旋转；
 
@@ -1016,16 +1111,6 @@
   3. Gazebo(ROS平台)
   4. MuJoCo(多用于强化学习的机器人仿真)
   5. PyBullet(python环境下的仿真模块)
-
-# 动作捕捉
-
-<b><details><summary>相关文章、论坛</summary></b>
-
-*  [人体姿态估计(Human Pose Estimation)经典方法整理](https://zhuanlan.zhihu.com/p/104917833)
-*  [2020CVPR人体姿态估计论文盘点](http://www.360doc.com/content/21/0602/13/61825250_980111489.shtml)
-*  [【CVPR 2021】PRTR：基于transformer的2D Human Pose Estimation](https://zhuanlan.zhihu.com/p/368067142)
-
-</details>
 
 
 
@@ -1144,7 +1229,7 @@
 
 * [微软亚洲研究院和北大联合开发的一个多模态算法-女娲](https://github.com/microsoft/NUWA)
 
-# 思考
+# 已读论文
 
-* [年轻时候做点什么投资自己，才能受益终身？](https://www.ixigua.com/6895365107195314701)
+* [单目的绝对深度估计，2022，《Depth Map Decomposition for Monocular Depth Estimation》](https://arxiv.org/pdf/2208.10762.pdf)
 
