@@ -1213,6 +1213,7 @@
 - [Unity3D使用手册](https://docs.unity3d.com/Manual/index.html)
 - [远程链接助手-tmux，将前端与后端分离](https://zhuanlan.zhihu.com/p/98384704)
 - [windows下的全能终端神器-mobaXterm](https://blog.csdn.net/xuanying_china/article/details/120080644)
+- github代码阅读方式：直接按“。”；代码运行调试工具：gitpod
 
 # FAQ
 
