@@ -1233,6 +1233,7 @@
 * [使用pytorch生成GAN网络](https://github.com/xerifg/Myipynb/blob/main/GAN_pytorch.ipynb)
 * [使用pytorch搭建全连接神经网络识别MINIST数据集的手写数字](https://github.com/xerifg/Myipynb/blob/main/pytorch%2BMINIST.ipynb)
 * [Github-字节跳动的视频人像抠图技术](https://github.com/PeterL1n/RobustVideoMatting)
+* [一个临床步态分析网站](http://www.clinicalgaitanalysis.com/)
 
 #### Others
 
