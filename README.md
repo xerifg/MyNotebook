@@ -26,7 +26,7 @@
 * [编程](#编程)
 * [工具](#工具)
 * [FAQ](#FAQ)
-* [代码/项目](#代码/项目)
+* [项目收藏](#项目收藏)
 * [已读论文](#已读论文)
 
 # 基础数学
@@ -1226,7 +1226,7 @@
 * [什么是feature scaling，什么时候需要feature scaling？](https://mp.weixin.qq.com/s/ehnoWIg8vK7dX_vFmg4zNQ?scene=25#wechat_redirect)
 * [如何将tensorflow1.0的代码升级到v2.0？](https://www.tensorflow.org/guide/upgrade);[中文博客](https://blog.csdn.net/xovee/article/details/93402172)
 
-# 代码/项目
+# 项目收藏
 
 [如何将论文中的深度学习方法用pytorch实现？](https://mp.weixin.qq.com/s/iQdRqxw7pjPMAa3suiJRVA)
 
