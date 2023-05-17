@@ -1169,7 +1169,16 @@ Apollo针对车道问题提出了车道序列概念，例如将车在十字路�
 ****Frenet坐标系****  
 在Frenet坐标系中，地面上的点的坐标位置可以由纵轴和横轴定位，分别记为S和D 。可以简单认为穿过道路中心的曲线决定了S轴，并指出了车辆在路上走了多远；D轴则映射为车辆的侧向位移。它是一种局部坐标系，即在曲线的每个点处都有一个坐标系。Frenet坐标系可以用于描述曲线的几何性质，如曲率和扭率。Frenet坐标系由三个单位向量组成：切向量 $\boldsymbol{T}$、法向量 $\boldsymbol{N}$ 和副法向量 $\boldsymbol{B}$。在曲线上的每个点，切向量 $\boldsymbol{T}$ 沿着曲线的方向，法向量 $\boldsymbol{N}$ 垂直于曲线的切向量，指向曲线的凸侧，副法向量 $\boldsymbol{B}$ 垂直于 $\boldsymbol{T}$ 和 $\boldsymbol{N}$，满足右手定则。在Frenet坐标系中，曲线上的每个点都可以用三个坐标来表示：弧长 $s$、曲率 $\kappa$ 和扭率 $\tau$。弧长 $s$ 表示从曲线起点到该点的距离，曲率 $\kappa$ 表示曲线在该点的弯曲程度，扭率 $\tau$ 则表示曲线在该点的扭转程度。    
 ****ST图****  
-“S”代表纵向位移，“T”代表时间，速度规划可以在ST图上进行寻找，[ST图的概念理解](https://github.com/xerifg/MyNotebook/blob/main/picture/ST%E5%9B%BE.png)
+“S”代表纵向位移，“T”代表时间，速度规划可以在ST图上进行寻找，[ST图的概念理解](https://github.com/xerifg/MyNotebook/blob/main/picture/ST%E5%9B%BE.png)  
+
+### 控制
+常见的控制算法：  
+  1. PID
+  2. LQR(线性二次调节器)
+  3. MPC(模型预测控制)
+
+
+
 
 
 # 编程
