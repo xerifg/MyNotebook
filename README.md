@@ -1397,7 +1397,7 @@ Lattice规划是一种路径规划算法，用于在网格化的环境中计算�
 * [Github-字节跳动的视频人像抠图技术](https://github.com/PeterL1n/RobustVideoMatting)
 * [一个临床步态分析网站](http://www.clinicalgaitanalysis.com/)
 * [微软亚洲研究院和北大联合开发的一个多模态算法-女娲](https://github.com/microsoft/NUWA)
-* [深度学习的常见网络、数据集集成地--Hugging Face](https://huggingface.co/welcome)
+* [深度学习的常见网络、数据集收集地--Hugging Face](https://huggingface.co/welcome)
 
 # 已读论文
 
